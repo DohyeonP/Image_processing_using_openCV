@@ -111,9 +111,9 @@ int main() {
 		pt[3].x = x_min;
 		pt[3].y = y_max;  // абго
 
-		for (size_t i = 0; i < ptSz; i++) {
-			cv::line(src_color, pt[i % ptSz], pt[(i + 1) % ptSz], CV_RGB(0, 0, 255),
-				1);
+		for (size_t i = 0; i < ptSz; i++)
+		{
+			cv::line(src_color, pt[i % ptSz], pt[(i + 1) % ptSz], CV_RGB(0, 0, 255), 1);
 		}
 	}
 	return 1;
