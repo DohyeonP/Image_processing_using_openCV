@@ -69,6 +69,18 @@
     <ClCompile Include="09.ISP_ShapeInfo_Signal.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10.ISP_Morpology.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10.ISP_Morpology_image.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09.ISP_ShapeInfo_Signal_Ex.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Quiz.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GuGuDan.h">

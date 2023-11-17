@@ -3,7 +3,7 @@
 #include "ISP.h"
 
 int main() {
-	std::string fileName = "../KCCImageNet/shapes.jpg";
+	std::string fileName = "../KCCImageNet/images/brake_disk/brake_disk_part_02.png";
 	cv::Mat src_gray = cv::imread(fileName, cv::ImreadModes::IMREAD_GRAYSCALE);
 
 	uchar* pData = src_gray.data;
