@@ -8,6 +8,7 @@
 #include <memory>
 #include <fstream> // ofstream header
 #include <format>
+#include <cmath>
 
 #define OPENCV_480
 #include <opencv2/opencv.hpp>

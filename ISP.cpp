@@ -12,6 +12,7 @@ ISP::~ISP()
 
 bool ISP::Convert_BGR2GRAY(uchar* pBGR, int cols, int rows, uchar* pGray)
 {
+#if 0
 	if (pBGR == nullptr || pGray == nullptr) return false;
 
 	cv::Mat src = cv::Mat(rows, cols, CV_8UC3, pBGR);
@@ -19,7 +20,7 @@ bool ISP::Convert_BGR2GRAY(uchar* pBGR, int cols, int rows, uchar* pGray)
 
 	cvtColor(src, gray_cv, COLOR_BGR2GRAY);
 
-#if 0
+#else
 	for (size_t row = 0; row < rows; row++)
 	{
 		for (size_t col = 0; col < cols; col++)
@@ -107,7 +108,7 @@ bool ISP::Gamma_Correction(uchar* pGray, int cols, int rows, uchar* pGrayGm)
 			index = row * cols + col;
 
 			normalized_value = (double)pGray[index] / 255.0;
-			corrected_value = pow(normalized_value, 1.5) * 255.0;
+			corrected_value = pow(normalized_value, 3) * 255.0;
 
 			pGrayGm[index] = static_cast<int>(corrected_value);
 		}

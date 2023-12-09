@@ -81,6 +81,18 @@
     <ClCompile Include="Quiz.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11.ISP_Template_Matching.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="solar.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="willie.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionAlgorithmChallenge.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GuGuDan.h">
@@ -92,5 +104,8 @@
     <ClInclude Include="ISP.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mtcnn\mtcnn.pb" />
   </ItemGroup>
 </Project>
